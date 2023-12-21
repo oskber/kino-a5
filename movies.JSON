@@ -6,7 +6,7 @@
       "description": "En underhållande barnfilm",
       "age_limit": "Ingen åldersgräns",
       "rating": 4,
-      "isNew": true
+      "isNew": false
     },
     {
       "title": "Äventyret på Regnbågskullen",
@@ -94,7 +94,7 @@
       "description": "Mörka hemligheter avslöjas",
       "age_limit": "Åldersgräns 18 år",
       "rating": 4,
-      "isNew": true
+      "isNew": false
     },
     {
       "title": "Action i Staden",
@@ -102,7 +102,7 @@
       "description": "Snabb och intensiv action",
       "age_limit": "Åldersgräns 12 år",
       "rating": 3,
-      "isNew": true
+      "isNew": false
     }
 ]
 
