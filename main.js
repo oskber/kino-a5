@@ -1,9 +1,9 @@
-async function fetchMovies() {
+/* async function fetchMovies() {
   const response = await fetch("./movies.JSON");
   const jsonData = await response.json();
   console.log(jsonData);
 }
-fetchMovies();
+fetchMovies(); */
 
 async function viewTop3() {
   //fetch movie data from json
@@ -15,7 +15,7 @@ async function viewTop3() {
   for (let i = 0; i < 3; i++) {
     const topMovies = sortedMovies[i];
     console.log(topMovies);
-    const topDiv = document.querySelector(".view__top3__container");
+    const topDiv = document.querySelector(".viewTop3__container");
     const element = document.createElement("div");
     element.innerHTML = `${topMovies.title} rating: ${topMovies.rating}`;
     topDiv.append(element);
@@ -34,9 +34,9 @@ async function viewCurrent() {
 
     if (movie.isNew === true) {
       console.log(`${movie.title} is a current movie`);
-      const currentDiv = document.querySelector(".view__current__container");
+      const currentDiv = document.querySelector(".viewCurrent__container");
       const element = document.createElement("div");
-      element.innerHTML = `${movie.title} is new`;
+      element.innerHTML = `${movie.title}`;
       currentDiv.append(element);
     }
   }
