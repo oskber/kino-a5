@@ -39,13 +39,16 @@
         color: white;
         font-size: 1.5rem;
         font-weight: bold;
+        transition: 0.1s ease-in-out;
         cursor: pointer;
         &:hover {
+            font-size: 1.55rem;
             color: #ffa500;
         }
     }
     &__list-item--active {
         color: #ffa500;
+        font-size: 1.55rem;
     }
     &__search-input {
         display: none;

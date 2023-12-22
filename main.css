@@ -43,13 +43,16 @@ To do this you write @import "insert .scss file name here".*/
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
+  transition: 0.1s ease-in-out;
   cursor: pointer;
 }
 .sidebar__list-item:hover {
+  font-size: 1.55rem;
   color: #ffa500;
 }
 .sidebar__list-item--active {
   color: #ffa500;
+  font-size: 1.55rem;
 }
 .sidebar__search-input {
   display: none;
