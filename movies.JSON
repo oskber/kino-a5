@@ -1,107 +1,119 @@
-[ 
-    
-    {
-      "title": "Magiska Djuräventyr",
-      "category": "kids",
-      "description": "En underhållande barnfilm",
-      "age_limit": "Ingen åldersgräns",
-      "rating": 4,
-      "isNew": false
-    },
-    {
-      "title": "Äventyret på Regnbågskullen",
-      "category": "kids",
-      "description": "Äventyr för de små",
-      "age_limit": "Ingen åldersgräns",
-      "rating": 3,
-      "isNew": false
-    },
-    {
-      "title": "Fantasy Äventyr",
-      "category": "kids",
-      "description": "Spännande fantasiresa",
-      "age_limit": "Ingen åldersgräns",
-      "rating": 3,
-      "isNew": true
-    },
-    {
-      "title": "Skrattgalna Familjen",
-      "category": "comedy",
-      "description": "Skrattfest för hela familjen",
-      "age_limit": "Åldersgräns 10 år",
-      "rating": 5,
-      "isNew": true
-    },
-    {
-      "title": "Tokroliga Grannar",
-      "category": "comedy",
-      "description": "Rolig och underhållande",
-      "age_limit": "Åldersgräns 10 år",
-      "rating": 2,
-      "isNew": false
-    },
-    {
-      "title": "Skruvad Komedi",
-      "category": "comedy",
-      "description": "Galna skämt och humor",
-      "age_limit": "Åldersgräns 10 år",
-      "rating": 4,
-      "isNew": false
-    },
-    {
-      "title": "Explosivt Äventyr i Staden",
-      "category": "action",
-      "description": "Spännande actionäventyr",
-      "age_limit": "Åldersgräns 12 år",
-      "rating": 4,
-      "isNew": true
-    },
-    {
-      "title": "Kampen mot Skurkarna",
-      "category": "action",
-      "description": "Adrenalinfylld action",
-      "age_limit": "Åldersgräns 12 år",
-      "rating": 1,
-      "isNew": false
-    },
-    {
-      "title": "Explosion i Rymden",
-      "category": "action",
-      "description": "Rymdäventyr och action",
-      "age_limit": "Åldersgräns 12 år",
-      "rating": 3,
-      "isNew": true
-    },
-    {
-      "title": "Mörkrets Skuggor",
-      "category": "horror",
-      "description": "Skrämmande och spännande",
-      "age_limit": "Åldersgräns 18 år",
-      "rating": 5,
-      "isNew": true
-    },
-    {
-      "title": "Förbannelsen från Gravkammaren",
-      "category": "horror",
-      "description": "Ryslig skräckupplevelse",
-      "age_limit": "Åldersgräns 18 år",
-      "rating": 2,
-      "isNew": false
-    },
-    {
-      "title": "Skuggornas Mästare",
-      "category": "horror",
-      "description": "Mörka hemligheter avslöjas",
-      "age_limit": "Åldersgräns 18 år",
-      "rating": 4,
-      "isNew": false
-    },
-    {
-      "title": "Action i Staden",
-      "category": "action",
-      "description": "Snabb och intensiv action",
-      "age_limit": "Åldersgräns 12 år",
-      "rating": 3,
-      "isNew": false
-    }
+[
+  {
+    "id": 1,
+    "title": "Magiska Djuräventyr",
+    "category": "kids",
+    "description": "En underhållande barnfilm",
+    "age_limit": "Ingen åldersgräns",
+    "rating": 4,
+    "isNew": false
+  },
+  {
+    "id": 2,
+    "title": "Äventyret på Regnbågskullen",
+    "category": "kids",
+    "description": "Äventyr för de små",
+    "age_limit": "Ingen åldersgräns",
+    "rating": 3,
+    "isNew": false
+  },
+  {
+    "id": 3,
+    "title": "Fantasy Äventyr",
+    "category": "kids",
+    "description": "Spännande fantasiresa",
+    "age_limit": "Ingen åldersgräns",
+    "rating": 3,
+    "isNew": true
+  },
+  {
+    "id": 4,
+    "title": "Skrattgalna Familjen",
+    "category": "comedy",
+    "description": "Skrattfest för hela familjen",
+    "age_limit": "Åldersgräns 10 år",
+    "rating": 5,
+    "isNew": true
+  },
+  {
+    "id": 5,
+    "title": "Tokroliga Grannar",
+    "category": "comedy",
+    "description": "Rolig och underhållande",
+    "age_limit": "Åldersgräns 10 år",
+    "rating": 2,
+    "isNew": false
+  },
+  {
+    "id": 6,
+    "title": "Skruvad Komedi",
+    "category": "comedy",
+    "description": "Galna skämt och humor",
+    "age_limit": "Åldersgräns 10 år",
+    "rating": 4,
+    "isNew": false
+  },
+  {
+    "id": 7,
+    "title": "Explosivt Äventyr i Staden",
+    "category": "action",
+    "description": "Spännande actionäventyr",
+    "age_limit": "Åldersgräns 12 år",
+    "rating": 4,
+    "isNew": true
+  },
+  {
+    "id": 8,
+    "title": "Kampen mot Skurkarna",
+    "category": "action",
+    "description": "Adrenalinfylld action",
+    "age_limit": "Åldersgräns 12 år",
+    "rating": 1,
+    "isNew": false
+  },
+  {
+    "id": 9,
+    "title": "Explosion i Rymden",
+    "category": "action",
+    "description": "Rymdäventyr och action",
+    "age_limit": "Åldersgräns 12 år",
+    "rating": 3,
+    "isNew": true
+  },
+  {
+    "id": 10,
+    "title": "Mörkrets Skuggor",
+    "category": "horror",
+    "description": "Skrämmande och spännande",
+    "age_limit": "Åldersgräns 18 år",
+    "rating": 5,
+    "isNew": true
+  },
+  {
+    "id": 11,
+    "title": "Förbannelsen från Gravkammaren",
+    "category": "horror",
+    "description": "Ryslig skräckupplevelse",
+    "age_limit": "Åldersgräns 18 år",
+    "rating": 2,
+    "isNew": false
+  },
+  {
+    "id": 12,
+    "title": "Skuggornas Mästare",
+    "category": "horror",
+    "description": "Mörka hemligheter avslöjas",
+    "age_limit": "Åldersgräns 18 år",
+    "rating": 4,
+    "isNew": false
+  },
+  {
+    "id": 13,
+    "title": "Action i Staden",
+    "category": "action",
+    "description": "Snabb och intensiv action",
+    "age_limit": "Åldersgräns 12 år",
+    "rating": 3,
+    "isNew": false
+  }
 ]
