@@ -26,6 +26,9 @@ To do this you write @import "insert .scss file name here".*/
   height: 50dvh;
   border-radius: 0 10px 10px 0;
 }
+.sidebar__container--open {
+  transform: translateX(0);
+}
 .sidebar__list {
   display: flex;
   flex-direction: column;
@@ -89,7 +92,4 @@ To do this you write @import "insert .scss file name here".*/
 }
 .sidebar__toggle-menu:hover {
   color: #ffa500;
-}
-.sidebar--open {
-  transform: translateX(0);
 }

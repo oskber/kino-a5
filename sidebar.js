@@ -13,7 +13,7 @@ function removeActive(categories, target) {
 }
 
 openSidebar.addEventListener("click", () => {
-    sideBar.classList.toggle("sidebar--open");
+    sideBar.classList.toggle("sidebar__container--open");
     openSidebar.classList.toggle("fa-caret-left");
 });
 

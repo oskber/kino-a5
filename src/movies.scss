@@ -22,6 +22,9 @@
         height: 50dvh;
         border-radius: 0 10px 10px 0;
     }
+    &__container--open {
+        transform: translateX(0);
+    }
     &__list {
         display: flex;
         flex-direction: column;
@@ -85,8 +88,5 @@
         &:hover {
             color: #ffa500;
         }
-    }
-    &--open {
-        transform: translateX(0);
     }
 }
