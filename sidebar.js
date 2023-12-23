@@ -6,6 +6,7 @@ async function init() {
     const sidebarList = document.querySelector(".sidebar__list");
     const searchIcon = document.querySelector(".sidebar__search-icon");
     const searchInput = document.querySelector(".sidebar__search-input");
+    let activeCategory;
 
     await fetch("../movies.json")
         .then((res) => res.json())
@@ -14,11 +15,7 @@ async function init() {
             categories.forEach((category) => {
                 const li = document.createElement("li");
                 li.classList.add("sidebar__list-item");
-                li.textContent = capitalyze(category);
-                li.addEventListener("click", (e) => {
-                    e.target.classList.toggle("sidebar__list-item--active");
-                    removeActive(e.target.textContent);
-                });
+                li.textContent = capitalize(category);
                 sidebarList.appendChild(li);
             });
         })
@@ -35,6 +32,10 @@ async function init() {
             searchIcon.classList.toggle("sidebar__search-icon--hidden");
             searchInput.classList.toggle("sidebar__search-input--open");
             searchInput.focus();
+        } else if (e.target.classList.contains("sidebar__list-item")) {
+            activeCategory !== e.target ? activeCategory?.classList.remove("sidebar__list-item--active") : null;
+            e.target.classList.toggle("sidebar__list-item--active");
+            activeCategory = e.target;
         }
     });
 
@@ -43,15 +44,6 @@ async function init() {
     });
 }
 
-function removeActive(activeCategory) {
-    const categories = document.querySelectorAll(".sidebar__list-item");
-    categories.forEach((category) => {
-        if (category.textContent !== activeCategory) {
-            category.classList.remove("sidebar__list-item--active");
-        }
-    });
-}
-
-function capitalyze(str) {
+function capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
