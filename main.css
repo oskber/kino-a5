@@ -1,3 +1,35 @@
 /*In this file there should only be imports from other .scss files,
 then everything will compile to main.css from here. 
 To do this you write @import "insert .scss file name here".*/
+* {
+  font-size: 100%;
+  margin: 0;
+}
+
+header {
+  background-color: #800020;
+  height: 10em;
+  display: flex;
+  flex-flow: column;
+  align-items: end;
+}
+header div {
+  width: 100%;
+  background-color: black;
+  height: 2em;
+}
+header nav {
+  margin-top: 5em;
+  min-width: 60%;
+}
+header nav ul {
+  min-width: 60%;
+  list-style: none;
+  display: flex;
+  gap: 8em;
+}
+header nav li a {
+  font-size: 1.4em;
+  text-decoration: none;
+  color: white;
+}
