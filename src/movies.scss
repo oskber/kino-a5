@@ -14,10 +14,9 @@ body{
     grid-template-rows: repeat(10, 10%);
     height: 400px;
     width: 250px;
-    background-color: whitesmoke;
-    border: 2px black solid;
     border-radius: 5px;
     overflow: hidden;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
     
 
     &:hover .movieTemplate__cover{
@@ -99,6 +98,16 @@ body{
     justify-self: end;
     align-self: end;
     margin: 0 10px 10px 0px;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+
+    &:hover{
+      background-color:#ffa600de;
+    }
+
+    &:active{
+      background-color:#FFA500;
+    }
 
   }
 
