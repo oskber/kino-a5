@@ -2,10 +2,10 @@
 then everything will compile to main.css from here. 
 To do this you write @import "insert .scss file name here".*/
 body {
-  margin: none;
+  margin: 0;
 }
 
-main {
+.moviesMain {
   display: flex;
   align-items: center;
   justify-content: center;
