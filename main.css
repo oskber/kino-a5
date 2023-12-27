@@ -2,14 +2,29 @@
 then everything will compile to main.css from here. 
 To do this you write @import "insert .scss file name here".*/
 body {
+  margin: none;
+}
+
+main {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #000000;
+}
+
+.allMovies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
 }
 
 .movieTemplate__card {
   font-family: Arial, Helvetica, sans-serif;
-  color: #000000;
+  color: whitesmoke;
+  background-color: #464646;
   display: grid;
   grid-template-columns: repeat(10, 10%);
   grid-template-rows: repeat(10, 10%);
@@ -17,7 +32,8 @@ body {
   width: 250px;
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
 .movieTemplate__card:hover .movieTemplate__cover {
   transform: translateY(-100%);
@@ -31,6 +47,11 @@ body {
   background-size: cover;
   transition: transform 0.5s ease-in-out;
 }
+@media screen and (max-width: 552px) {
+  .movieTemplate__cover {
+    display: none;
+  }
+}
 .movieTemplate__img {
   grid-column: 1/span 10;
   grid-row: 1/span 5;
@@ -39,38 +60,43 @@ body {
   background-size: cover;
 }
 .movieTemplate__title {
-  grid-column: 1/span 4;
+  grid-column: 1/span 10;
   grid-row: 6/span 1;
-  margin: auto 0px auto 10px;
+  margin: 1rem 0 0 0.8rem;
+  font-size: 1rem;
 }
 .movieTemplate__ageLimit {
   grid-column: 6/span 5;
-  grid-row: 6/span 1;
-  margin: auto auto;
-  font-size: 14px;
-  color: #464646;
+  grid-row: 7/span 1;
+  justify-self: end;
+  align-self: end;
+  margin: 0 0.8rem 1rem 0;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #ffa500;
 }
 .movieTemplate__category {
   grid-row: 7/span 1;
-  grid-column: 1/span 2;
-  margin: 0;
-  margin-left: 10px;
-  color: #464646;
+  grid-column: 1/span 5;
+  align-self: end;
+  margin: 0 0 0.8rem 0.8rem;
+  color: rgb(168, 167, 167);
 }
 .movieTemplate__description {
   grid-row: 8/span 2;
   grid-column: 1/span 10;
-  margin: 0 20px 0 20px;
+  margin: 0 0.8rem 0 0.8rem;
   align-self: start;
   justify-self: start;
-  margin: 0 0 0 10px;
   font-size: 12px;
   font-weight: bold;
 }
 .movieTemplate__button {
   grid-column: 5/span 6;
   grid-row: 10/span 1;
-  background-color: #FFA500;
+  color: whitesmoke;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+  background-color: #ffa500;
   border: none;
   font-weight: bold;
   border-radius: 3px;
@@ -86,5 +112,5 @@ body {
   background-color: rgba(255, 166, 0, 0.8705882353);
 }
 .movieTemplate__button:active {
-  background-color: #FFA500;
+  background-color: #ffa500;
 }
