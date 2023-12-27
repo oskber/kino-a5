@@ -3,22 +3,22 @@
     margin: 0;
     
 }
-header {
+.mainHeader {
     background-color: #800020;
     height:10em;
     display: flex;
     flex-flow: column;
     align-items: end;
-    div {
+    .mainHeader__div {
         width: 100%;
         background-color: black;
         height: 2em;
     }
-    nav {
+    .mainHeader__nav {
         margin-top: 5em;
         min-width: 60%;
                
-        ul {
+        .mainHeader__nav__ul {
             min-width: 60%;
             list-style: none;
             display: flex;
