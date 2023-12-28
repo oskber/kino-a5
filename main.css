@@ -6,29 +6,29 @@ To do this you write @import "insert .scss file name here".*/
   margin: 0;
 }
 
-header {
+.Header {
   background-color: #800020;
   height: 10em;
   display: flex;
   flex-flow: column;
   align-items: end;
 }
-header div {
+.Header .Header__div {
   width: 100%;
   background-color: black;
   height: 2em;
 }
-header nav {
+.Header .Header__nav {
   margin-top: 5em;
   min-width: 60%;
 }
-header nav ul {
+.Header .Header__nav .Header__nav__ul {
   min-width: 60%;
   list-style: none;
   display: flex;
   gap: 8em;
 }
-header nav li a {
+.Header .Header__nav .Header__nav__ul__li a {
   font-size: 1.4em;
   text-decoration: none;
   color: white;
