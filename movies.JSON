@@ -6,7 +6,8 @@
     "description": "En underhållande barnfilm",
     "age_limit": "Ingen åldersgräns",
     "rating": 4,
-    "isNew": false
+    "isNew": false,
+    "image": ""
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "description": "Äventyr för de små",
     "age_limit": "Ingen åldersgräns",
     "rating": 3,
-    "isNew": false
+    "isNew": false,
+    "image": ""
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "description": "Spännande fantasiresa",
     "age_limit": "Ingen åldersgräns",
     "rating": 3,
-    "isNew": true
+    "isNew": true,
+    "image": ""
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "description": "Skrattfest för hela familjen",
     "age_limit": "Åldersgräns 10 år",
     "rating": 5,
-    "isNew": true
+    "isNew": true,
+    "image": ""
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "description": "Rolig och underhållande",
     "age_limit": "Åldersgräns 10 år",
     "rating": 2,
-    "isNew": false
+    "isNew": false,
+    "image": ""
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "description": "Galna skämt och humor",
     "age_limit": "Åldersgräns 10 år",
     "rating": 4,
-    "isNew": false
+    "isNew": false,
+    "image": ""
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "description": "Spännande actionäventyr",
     "age_limit": "Åldersgräns 12 år",
     "rating": 4,
-    "isNew": true
+    "isNew": true,
+    "image": ""
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "description": "Adrenalinfylld action",
     "age_limit": "Åldersgräns 12 år",
     "rating": 1,
-    "isNew": false
+    "isNew": false,
+    "image": ""
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@
     "description": "Rymdäventyr och action",
     "age_limit": "Åldersgräns 12 år",
     "rating": 3,
-    "isNew": true
+    "isNew": true,
+    "image": ""
   },
   {
     "id": 10,
@@ -87,7 +96,8 @@
     "description": "Skrämmande och spännande",
     "age_limit": "Åldersgräns 18 år",
     "rating": 5,
-    "isNew": true
+    "isNew": true,
+    "image": ""
   },
   {
     "id": 11,
@@ -96,7 +106,8 @@
     "description": "Ryslig skräckupplevelse",
     "age_limit": "Åldersgräns 18 år",
     "rating": 2,
-    "isNew": false
+    "isNew": false,
+    "image": ""
   },
   {
     "id": 12,
@@ -105,7 +116,9 @@
     "description": "Mörka hemligheter avslöjas",
     "age_limit": "Åldersgräns 18 år",
     "rating": 4,
-    "isNew": false
+    "isNew": false,
+    "image": ""
+
   },
   {
     "id": 13,
@@ -114,6 +127,7 @@
     "description": "Snabb och intensiv action",
     "age_limit": "Åldersgräns 12 år",
     "rating": 3,
-    "isNew": false
+    "isNew": false,
+    "image": ""
   }
 ]
