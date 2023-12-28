@@ -3,6 +3,11 @@
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
+
+main {
+  background-color: black;
+}
+
 .Header {
   background-color: #800020;
   width: 100%;
@@ -36,22 +41,34 @@
 }
 .viewTop3 {
   text-align: center;
-  margin: 10rem 10rem;
+  padding: 5rem 5rem;
   &__container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
   }
+  &__title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 1rem 1rem;
+  }
 }
 
 .viewCurrent {
   text-align: center;
-  margin: 10rem 10rem;
+  padding: 5rem 5rem;
   &__container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
+  }
+  &__title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 1rem 1rem;
   }
 }

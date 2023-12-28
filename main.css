@@ -7,6 +7,10 @@ To do this you write @import "insert .scss file name here".*/
   margin: 0;
 }
 
+main {
+  background-color: black;
+}
+
 .Header {
   background-color: #800020;
   width: 100%;
@@ -38,7 +42,7 @@ To do this you write @import "insert .scss file name here".*/
 
 .viewTop3 {
   text-align: center;
-  margin: 10rem 10rem;
+  padding: 5rem 5rem;
 }
 .viewTop3__container {
   display: flex;
@@ -46,16 +50,28 @@ To do this you write @import "insert .scss file name here".*/
   justify-content: center;
   gap: 2rem;
 }
+.viewTop3__title {
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 1rem 1rem;
+}
 
 .viewCurrent {
   text-align: center;
-  margin: 10rem 10rem;
+  padding: 5rem 5rem;
 }
 .viewCurrent__container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 2rem;
+}
+.viewCurrent__title {
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 1rem 1rem;
 }
 
 body {
