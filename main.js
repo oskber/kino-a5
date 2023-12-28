@@ -1,45 +1,42 @@
-/* async function fetchMovies() {
-  const response = await fetch("./movies.JSON");
-  const jsonData = await response.json();
-  console.log(jsonData);
-}
-fetchMovies(); */
-
-async function viewTop3() {
-  //fetch movie data from json
-  const response = await fetch("./movies.JSON");
-  const jsonData = await response.json();
-
-  //sort movies by rating, top to bottom
-  const sortedMovies = jsonData.sort((a, b) => b.rating - a.rating);
-  for (let i = 0; i < 3; i++) {
-    const topMovies = sortedMovies[i];
-    console.log(topMovies);
-    const topDiv = document.querySelector(".viewTop3__container");
-    const element = document.createElement("div");
-    element.innerHTML = `${topMovies.title} rating: ${topMovies.rating}`;
-    topDiv.append(element);
-  }
+async function fetchMovies() {
+  const response = await fetch("/movies.JSON");
+  return await response.json();
 }
 
-viewTop3();
+const movies = await fetchMovies();
 
-async function viewCurrent() {
-  //fetch movie data from json
-  const response = await fetch("./movies.JSON");
-  const jsonData = await response.json();
+console.log(movies);
 
-  for (let i = 0; i < jsonData.length; i++) {
-    const movie = jsonData[i];
-
-    if (movie.isNew === true) {
-      console.log(`${movie.title} is a current movie`);
-      const currentDiv = document.querySelector(".viewCurrent__container");
-      const element = document.createElement("div");
-      element.innerHTML = `${movie.title}`;
-      currentDiv.append(element);
-    }
-  }
+if (window.location.pathname.includes("movies")) {
+  const container = document.querySelector(".allMovies");
+  renderMovies(container);
 }
 
-viewCurrent();
+function renderMovies(container) {
+  movies.forEach((movie) => {
+    const movieCard = createMovie(movie);
+    container.appendChild(movieCard);
+  })
+
+}
+
+function createMovie(movie) {
+  const movieTemplate = document.querySelector(".movieTemplate");
+  const temp = movieTemplate.content.cloneNode(true);
+  const card = temp.querySelector(".movieTemplate__card");
+  const cardCover = temp.querySelector(".movieTemplate__cover");
+  const cardImg = temp.querySelector(".movieTemplate__img");
+  const cardTitle = temp.querySelector(".movieTemplate__title");
+  const cardAge = temp.querySelector(".movieTemplate__ageLimit");
+  const cardCat = temp.querySelector(".movieTemplate__category");
+  const cardDes = temp.querySelector(".movieTemplate__description");
+  const cardBtn = temp.querySelector(".movieTemplate__button");
+  card.id = movie.id;
+  cardTitle.innerText = movie.title;
+  cardAge.innerText = movie.age_limit;
+  cardCat.innerText = movie.category;
+  cardDes.innerText = movie.description;
+  cardImg.style.backgroundImage = `url(${movie.image})`;
+  cardCover.style.backgroundImage = `url(${movie.image})`;
+  return temp;
+}
