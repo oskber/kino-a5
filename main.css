@@ -6,6 +6,10 @@ To do this you write @import "insert .scss file name here".*/
   margin: 0;
 }
 
+body {
+  background-color: #000000;
+}
+
 .Header {
   background-color: #800020;
   width: 100%;
@@ -13,11 +17,7 @@ To do this you write @import "insert .scss file name here".*/
   display: flex;
   flex-flow: column;
   align-items: end;
-}
-.Header .Header__div {
-  width: 100%;
-  background-color: black;
-  height: 2em;
+  margin-top: 3em;
 }
 .Header .Header__nav {
   margin-top: 5em;
@@ -33,6 +33,17 @@ To do this you write @import "insert .scss file name here".*/
   font-size: 1.4em;
   text-decoration: none;
   color: white;
+}
+
+.Main__section__ComingMovies {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 7em;
+}
+.Main__section__ComingMovies .Main__section__CommingMovies__h1 {
+  color: white;
+  font-size: 3em;
 }
 
 body {

@@ -41,31 +41,21 @@ function createMovie(movie) {
 }
 
 
-class FetchMovies {
-  async Getmovies(){
-    const api = 'movies.JSON';
-    const response = await fetch (api)
-    const movies = await response.json();
-    return movies
-  }
-}
 
 class RenderComingMovies {
 
-  static async renderMovies(){
-    const fetchComingMovies = new FetchMovies();
-    const comingMovies = await fetchComingMovies.Getmovies();
-    console.log('hej')
-    console.log(comingMovies);
-    
-
-    
-   
+  renderMovies() {
+    const comingMovieSection = document.querySelector('.Main__section__ComingMovies');
+    movies.forEach(moviez => {
+      if (moviez.isReleased === false) {
+        comingMovieSection.appendChild(createMovie(moviez));
+      }
+    })
   }
-
 }
 
-RenderComingMovies.renderMovies();
+const renderer = new RenderComingMovies
+renderer.renderMovies();
 
 
 
