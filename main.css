@@ -13,12 +13,17 @@ body {
 }
 
 .allMovies {
-  align-items: center;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+  margin: 100px 0 100px 0;
   max-width: 1200px;
+}
+@media screen and (max-width: 552px) {
+  .allMovies {
+    justify-content: center;
+  }
 }
 
 .movieTemplate__card {
@@ -39,8 +44,8 @@ body {
   transform: translateY(-100%);
 }
 .movieTemplate__cover {
-  background-image: url(https://image.tmdb.org/t/p/w600_and_h900_bestv2/l13mt3oHErSkkqJbN1bjzgtK0Vq.jpg);
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   grid-column: 1/span 10;
   grid-row: 1/span 10;
@@ -53,7 +58,6 @@ body {
   }
 }
 .movieTemplate__img {
-  background-image: url(https://image.tmdb.org/t/p/w600_and_h900_bestv2/l13mt3oHErSkkqJbN1bjzgtK0Vq.jpg);
   background-position: center;
   background-size: cover;
   grid-column: 1/span 10;
@@ -84,7 +88,7 @@ body {
 }
 .movieTemplate__description {
   align-self: start;
-  font-size: 12px;
+  font-size: 0.7rem;
   font-weight: bold;
   grid-column: 1/span 10;
   grid-row: 8/span 2;
