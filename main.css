@@ -37,6 +37,7 @@ To do this you write @import "insert .scss file name here".*/
 
 body {
   margin: 0;
+  font-style: roboto;
 }
 
 .moviesMain {
@@ -66,7 +67,7 @@ body {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   color: whitesmoke;
   display: grid;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: roboto;
   grid-template-columns: repeat(10, 10%);
   grid-template-rows: repeat(10, 10%);
   height: 400px;
@@ -102,11 +103,12 @@ body {
   grid-column: 1/span 10;
   grid-row: 6/span 1;
   margin: 1rem 0 0 0.8rem;
+  line-height: 0.9rem;
 }
 .movieTemplate__ageLimit {
   align-self: end;
   color: #ffa500;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: bold;
   grid-column: 6/span 5;
   grid-row: 7/span 1;
@@ -122,7 +124,7 @@ body {
 }
 .movieTemplate__description {
   align-self: start;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: bold;
   grid-column: 1/span 10;
   grid-row: 8/span 2;
