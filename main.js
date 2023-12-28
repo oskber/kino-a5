@@ -5,7 +5,6 @@ async function fetchMovies() {
 
 const movies = await fetchMovies();
 
-console.log(movies);
 
 if (window.location.pathname.includes("movies")) {
   const container = document.querySelector(".allMovies");
@@ -40,3 +39,33 @@ function createMovie(movie) {
   cardCover.style.backgroundImage = `url(${movie.image})`;
   return temp;
 }
+
+
+class FetchMovies {
+  async Getmovies(){
+    const api = 'movies.JSON';
+    const response = await fetch (api)
+    const movies = await response.json();
+    return movies
+  }
+}
+
+class RenderComingMovies {
+
+  static async renderMovies(){
+    const fetchComingMovies = new FetchMovies();
+    const comingMovies = await fetchComingMovies.Getmovies();
+    console.log('hej')
+    console.log(comingMovies);
+    
+
+    
+   
+  }
+
+}
+
+RenderComingMovies.renderMovies();
+
+
+
