@@ -6,6 +6,7 @@
   <li>We use SCSS for styling.</li>
   <li>All .scss files are to be imported into main.scss and then compiled from there into main.css.<br> No one should write directly in main.scss or main.css.</li>
   <li>All classnames in html should be written with BEM-method if they are to be styled.</li>
+  <li>We use fontstyle roboto on all pages</li>
   <li>We use the extension Prettier for formatting scss and JS.</li>
   <li>In HTML we format with HTML language feature.</li>
   <li>We do visual testing on all features added as they are mostly static with minimal JS.</li>
