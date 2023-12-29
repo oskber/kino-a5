@@ -49,10 +49,38 @@ main {
     gap: 2rem;
   }
   &__title {
-    color: white;
+    color: whitesmoke;
     font-size: 2rem;
     font-weight: 900;
     padding: 1rem 1rem;
+  }
+  &__btn {
+    align-self: end;
+    background-color: #ffa500;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    color: whitesmoke;
+    cursor: pointer;
+    font-weight: bold;
+    grid-column: 5 / span 6;
+    grid-row: 10 / span 1;
+    height: 30px;
+    justify-self: end;
+    margin: 20px 10px 10px 0px;
+    text-shadow: 1px 1px 0px rgba(#000000, 0.5);
+    width: 120px;
+
+    &:hover {
+      background-color: #ffa600de;
+    }
+    &:active {
+      background-color: #ffa500;
+    }
+    a {
+      text-decoration: none;
+      color: whitesmoke;
+    }
   }
 }
 
@@ -66,9 +94,38 @@ main {
     gap: 2rem;
   }
   &__title {
-    color: white;
+    color: whitesmoke;
     font-size: 2rem;
     font-weight: 900;
     padding: 1rem 1rem;
+  }
+  &__btn {
+    align-self: end;
+    background-color: #ffa500;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    color: whitesmoke;
+    cursor: pointer;
+    font-weight: bold;
+    grid-column: 5 / span 6;
+    grid-row: 10 / span 1;
+    height: 30px;
+    justify-self: end;
+    margin: 20px 10px 10px 0px;
+    text-shadow: 1px 1px 0px rgba(#000000, 0.5);
+    width: 120px;
+
+    &:hover {
+      background-color: #ffa600de;
+    }
+    &:active {
+      background-color: #ffa500;
+    }
+
+    a {
+      text-decoration: none;
+      color: whitesmoke;
+    }
   }
 }
