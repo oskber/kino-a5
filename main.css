@@ -11,10 +11,6 @@ main {
   background-color: black;
 }
 
-.moviesMain {
-  display: flex;
-}
-
 .Header {
   background-color: #800020;
   width: 100%;
