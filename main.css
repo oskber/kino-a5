@@ -3,17 +3,21 @@ then everything will compile to main.css from here.
 To do this you write @import "insert .scss file name here".*/
 * {
   font-size: 100%;
+  font-family: "Roboto", sans-serif;
   margin: 0;
+}
+
+body {
+  background-color: black;
 }
 
 .Header {
   background-color: #800020;
-  width: 100%;
   height: 10em;
   display: flex;
   flex-flow: column;
   align-items: end;
-  margin-top: 3em;
+  margin-top: 2em;
 }
 .Header .Header__nav {
   margin-top: 5em;
@@ -33,20 +37,107 @@ To do this you write @import "insert .scss file name here".*/
 
 .Main__section__ComingMovies {
   display: flex;
-  justify-content: center;
-  gap: 2em;
-  margin-top: 7em;
+  flex-flow: column;
+  align-items: center;
+  gap: 1em;
 }
-
-div {
-  width: 100%;
-  height: 1em;
+.Main__section__ComingMovies .Main__section__CommingMovies__h1 {
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.Main__section__ComingMovies .section__ComingMovies__DivContainer {
   display: flex;
   justify-content: center;
+  gap: 2em;
 }
-div .Main__section__CommingMovies__h1 {
-  color: black;
-  font-size: 3em;
+
+.viewTop3 {
+  text-align: center;
+  padding: 5rem 5rem;
+}
+.viewTop3__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+.viewTop3__title {
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 1rem 1rem;
+}
+.viewTop3__btn {
+  align-self: end;
+  background-color: #ffa500;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  color: whitesmoke;
+  cursor: pointer;
+  font-weight: bold;
+  grid-column: 5/span 6;
+  grid-row: 10/span 1;
+  height: 30px;
+  justify-self: end;
+  margin: 20px 10px 10px 0px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+  width: 120px;
+}
+.viewTop3__btn:hover {
+  background-color: rgba(255, 166, 0, 0.8705882353);
+}
+.viewTop3__btn:active {
+  background-color: #ffa500;
+}
+.viewTop3__btn a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.viewCurrent {
+  text-align: center;
+  padding: 5rem 5rem;
+}
+.viewCurrent__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+.viewCurrent__title {
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 1rem 1rem;
+}
+.viewCurrent__btn {
+  align-self: end;
+  background-color: #ffa500;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  color: whitesmoke;
+  cursor: pointer;
+  font-weight: bold;
+  grid-column: 5/span 6;
+  grid-row: 10/span 1;
+  height: 30px;
+  justify-self: end;
+  margin: 20px 10px 10px 0px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+  width: 120px;
+}
+.viewCurrent__btn:hover {
+  background-color: rgba(255, 166, 0, 0.8705882353);
+}
+.viewCurrent__btn:active {
+  background-color: #ffa500;
+}
+.viewCurrent__btn a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 body {

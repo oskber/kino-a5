@@ -1,5 +1,5 @@
 async function fetchMovies() {
-  const response = await fetch("https://anschoolacc.github.io/Uppgift-2-En-biograf-sajt/movies.JSON");
+  const response = await fetch("https://anschoolacc.github.io/Uppgift-2-En-biograf-sajt/movies.JSON"); // "/movies.JSON"
   return await response.json();
 }
 
@@ -9,15 +9,47 @@ const movies = await fetchMovies();
 if (window.location.pathname.includes("movies")) {
   const container = document.querySelector(".allMovies");
   renderMovies(container);
+} else if (window.location.pathname.includes("index")) {
+  const container = document.querySelector(".viewTop3__container");
+  renderMovies(container, true);
 }
 
-function renderMovies(container) {
-  movies.forEach((movie) => {
+//this function renders movies to movies.html and top3 on index.html
+function renderMovies(container, top3) {
+  if (!movies) return;
+  let render;
+  if (top3) {
+    render = movies.sort((a, b) => b.rating - a.rating).slice(0, 3);
+  } else {
+    render = movies;
+  }
+
+  render.forEach((movie) => {
     const movieCard = createMovie(movie);
     container.appendChild(movieCard);
-  })
-
+  });
 }
+
+//function to render current movies
+const currentMovies = document.querySelector(".viewCurrent__container");
+
+function renderCurrentMovies() {
+  const maxCardsToShow = 5;
+  let cardsRendered = 0;
+
+  for (let i = 0; i < movies.length; i++) {
+    const movie = movies[i];
+
+    if (movie.isNew === true && cardsRendered < maxCardsToShow) {
+      const movieCard = createMovie(movie);
+      currentMovies.appendChild(movieCard);
+      console.log(movie);
+      cardsRendered++;
+    }
+  }
+}
+//run function
+renderCurrentMovies();
 
 function createMovie(movie) {
   const movieTemplate = document.querySelector(".movieTemplate");
@@ -45,7 +77,7 @@ function createMovie(movie) {
 class RenderComingMovies {
 
   renderMovies() {
-    const comingMovieSection = document.querySelector('.Main__section__ComingMovies');
+    const comingMovieSection = document.querySelector('.section__ComingMovies__DivContainer');
     movies.forEach(moviez => {
       if (moviez.isReleased === false) {
         comingMovieSection.appendChild(createMovie(moviez));
