@@ -138,6 +138,7 @@ body {
   background-color: #000000;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .allMovies {
@@ -145,13 +146,19 @@ body {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-  margin: 100px 0 100px 0;
+  margin: 0 0 1rem 0;
   max-width: 1200px;
 }
 @media screen and (max-width: 552px) {
   .allMovies {
     justify-content: center;
   }
+}
+.allMovies__title {
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 1rem 1rem;
 }
 
 .movieTemplate__card {
