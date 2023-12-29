@@ -4,10 +4,6 @@
 
 }
 
-body {
-    background-color: #000000;
-}
-
 .Header {
     background-color: #800020;
     width: 100%;
@@ -16,8 +12,6 @@ body {
     flex-flow: column;
     align-items: end;
     margin-top: 3em;
-
-    
 
     .Header__nav {
         margin-top: 5em;
@@ -39,8 +33,6 @@ body {
         }
     }
 }
-
-
 
 .Main__section__ComingMovies {
     display: flex;

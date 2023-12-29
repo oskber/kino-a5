@@ -151,7 +151,7 @@
         "rating": 4,
         "isNew": true,
         "isReleased": false,
-        "image": "https://exempel.com/bild14.jpg"
+        "image": "https://kino.nu/uploads/images/media/4393/Pojken_och_hgern_Bild_06_TriArt_Film.jpg"
     },
     {
         "id": 15,
@@ -162,7 +162,7 @@
         "rating": 5,
         "isNew": false,
         "isReleased": false,
-        "image": "https://exempel.com/bild15.jpg"
+        "image": "https://kino.nu/uploads/images/media/4437/DenlillafgelnSOMMAR.jpg"
     },
     {
         "id": 16,
@@ -173,7 +173,7 @@
         "rating": 3,
         "isNew": false,
         "isReleased": false,
-        "image": "https://exempel.com/bild16.jpg"
+        "image": "https://kino.nu/uploads/images/media/4403/03.jpg"
     },
     {
         "id": 17,
@@ -184,6 +184,6 @@
         "rating": 4,
         "isNew": true,
         "isReleased": false,
-        "image": "https://exempel.com/bild17.jpg"
+        "image": "https://kino.nu/uploads/images/media/4437/DenlillafgelnSOMMAR.jpg"
     }
 ]
