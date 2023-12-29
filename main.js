@@ -1,5 +1,5 @@
 async function fetchMovies() {
-  const response = await fetch("/movies.JSON"); //https://anschoolacc.github.io/BiHjoGrafAPI/movies.JSON
+  const response = await fetch("https://anschoolacc.github.io/Uppgift-2-En-biograf-sajt/movies.JSON"); // "/movies.JSON"
   return await response.json();
 }
 
