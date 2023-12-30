@@ -143,6 +143,7 @@ main {
   transform: translateY(-25%);
   margin-bottom: 50dvh;
   margin-right: -200px;
+  z-index: 10;
 }
 .sidebar__container {
   display: flex;
@@ -226,6 +227,10 @@ body {
   font-style: roboto;
 }
 
+.container {
+  margin: 0 auto;
+}
+
 .moviesMain {
   background-color: #000000;
   display: flex;
@@ -237,12 +242,18 @@ body {
   gap: 2rem;
   justify-content: center;
   max-width: 1200px;
-  margin: 100px auto;
 }
 @media screen and (max-width: 552px) {
   .allMovies {
     justify-content: center;
   }
+}
+.allMovies__title {
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 1rem 1rem;
+  text-align: center;
 }
 
 .movieTemplate__card {
