@@ -24,6 +24,13 @@ main {
   background-color: black;
   height: 2em;
 }
+.Header .Header__nav__logo {
+  height: 120px;
+  width: auto;
+  margin-right: auto;
+  margin-bottom: -120px;
+  padding: 3px;
+}
 .Header .Header__nav {
   margin-top: 5em;
   min-width: 60%;

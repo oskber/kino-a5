@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>BiHjoGrafen</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-  <script src='main.js' type="module"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js" type="module"></script>
 </head>
-
 
 <body>
   <header class="Header">
     <div class="Header__div">
       <!-- Black div inside header -->
     </div>
+    <img class="Header__nav__logo" src="assets/bihjografenlogo.png" alt="logo of the site" />
     <nav class="Header__nav">
       <ul class="Header__nav__ul">
-        <li class="Header__nav__ul__li"><a href="pages/movies.html">Filmer</a></li>
+        <li class="Header__nav__ul__li">
+          <a href="pages/movies.html">Filmer</a>
+        </li>
         <li class="Header__nav__ul__li"><a href="">Biljetter</a></li>
-        <li class="Header__nav__ul__li"><a href="pages/aboutUs.html">Om oss</a></li>
+        <li class="Header__nav__ul__li">
+          <a href="pages/aboutUs.html">Om oss</a>
+        </li>
         <li class="Header__nav__ul__li"><a href="">Sök</a></li>
       </ul>
     </nav>
@@ -29,19 +32,20 @@
   <main>
     <section class="viewTop3">
       <h1 class="viewTop3__title">TOPP 3</h1>
-      <div class="viewTop3__container">
-      </div>
-      <button class="viewTop3__btn"><a href="pages/movies.html">Se alla filmer</a></button>
+      <div class="viewTop3__container"></div>
+      <button class="viewTop3__btn">
+        <a href="pages/movies.html">Se alla filmer</a>
+      </button>
     </section>
     <section class="viewCurrent">
       <h1 class="viewCurrent__title">AKTUELLA</h1>
-      <div class="viewCurrent__container">
-      </div>
-      <button class="viewCurrent__btn"><a href="pages/movies.html">Se alla filmer</a></button>
+      <div class="viewCurrent__container"></div>
+      <button class="viewCurrent__btn">
+        <a href="pages/movies.html">Se alla filmer</a>
+      </button>
     </section>
   </main>
-  <footer>
-  </footer>
+  <footer></footer>
   <template class="movieTemplate">
     <div class="movieTemplate__card">
       <div class="movieTemplate__cover"></div>
@@ -54,4 +58,5 @@
     </div>
   </template>
 </body>
+
 </html>
