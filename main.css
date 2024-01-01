@@ -24,12 +24,13 @@ main {
   background-color: black;
   height: 2em;
 }
-.Header .Header__nav__logo {
-  height: 120px;
+.Header .Header__logo {
+  height: 7.5em;
   width: auto;
   margin-right: auto;
-  margin-bottom: -120px;
+  margin-bottom: -7.5em;
   padding: 3px;
+  margin-left: 2em;
 }
 .Header .Header__nav {
   margin-top: 5em;
