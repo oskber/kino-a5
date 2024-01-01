@@ -15,7 +15,7 @@ body {
   flex-flow: column;
   align-items: end;
   margin-top: 2em;
- 
+
   .Header__nav {
     margin-top: 5em;
     min-width: 60%;
@@ -26,6 +26,7 @@ body {
       display: flex;
       gap: 8em;
     }
+
     .Header__nav__ul__li {
       a {
         font-size: 1.4em;
@@ -37,26 +38,27 @@ body {
 }
 
 .comingMovies {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 1em;
+
+  .commingMovies__title {
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  .comingMovies__Container {
     display: flex;
-    flex-flow: column;
-    align-items: center;
-    gap: 1em;
-    .commingMovies__title {
-        color: whitesmoke;
-        font-size: 2rem;
-        font-weight: 900;
-    }
+    justify-content: center;
+    gap: 2em;
 
-    .comingMovies__Container {
-        display: flex;
-        justify-content: center;
-        gap: 2em;
+  }
 
-    }
-
-    .viewCurrent__btn{
-      align-self: center;
-    }
+  .viewCurrent__btn {
+    align-self: center;
+  }
 
 
 }
@@ -70,18 +72,21 @@ body {
 .viewTop3 {
   text-align: center;
   padding: 5rem 5rem;
+
   &__container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
   }
+
   &__title {
     color: whitesmoke;
     font-size: 2rem;
     font-weight: 900;
     padding: 1rem 1rem;
   }
+
   &__btn {
     align-self: end;
     background-color: #ffa500;
@@ -102,9 +107,11 @@ body {
     &:hover {
       background-color: #ffa600de;
     }
+
     &:active {
       background-color: #ffa500;
     }
+
     a {
       text-decoration: none;
       color: whitesmoke;
@@ -115,18 +122,21 @@ body {
 .viewCurrent {
   text-align: center;
   padding: 5rem 5rem;
+
   &__container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
   }
+
   &__title {
     color: whitesmoke;
     font-size: 2rem;
     font-weight: 900;
     padding: 1rem 1rem;
   }
+
   &__btn {
     align-self: end;
     background-color: #ffa500;
@@ -147,6 +157,7 @@ body {
     &:hover {
       background-color: #ffa600de;
     }
+
     &:active {
       background-color: #ffa500;
     }
