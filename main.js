@@ -73,7 +73,7 @@ function createMovie(movie) {
 }
 
 
-
+//Rendering "coming movies".
 class RenderComingMovies {
 
   renderMovies() {
@@ -85,7 +85,7 @@ class RenderComingMovies {
     })
   }
 }
-
+//Calling new instance of class.
 const renderer = new RenderComingMovies
 renderer.renderMovies();
 
