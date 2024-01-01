@@ -35,21 +35,24 @@ body {
   color: white;
 }
 
-.Main__section__ComingMovies {
+.comingMovies {
   display: flex;
   flex-flow: column;
   align-items: center;
   gap: 1em;
 }
-.Main__section__ComingMovies .Main__section__CommingMovies__h1 {
+.comingMovies .commingMovies__title {
   color: whitesmoke;
   font-size: 2rem;
   font-weight: 900;
 }
-.Main__section__ComingMovies .section__ComingMovies__DivContainer {
+.comingMovies .comingMovies__Container {
   display: flex;
   justify-content: center;
   gap: 2em;
+}
+.comingMovies .viewCurrent__btn {
+  align-self: center;
 }
 
 .viewTop3 {

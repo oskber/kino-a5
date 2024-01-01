@@ -77,7 +77,7 @@ function createMovie(movie) {
 class RenderComingMovies {
 
   renderMovies() {
-    const comingMovieSection = document.querySelector('.section__ComingMovies__DivContainer');
+    const comingMovieSection = document.querySelector('.comingMovies__Container');
     movies.forEach(moviez => {
       if (moviez.isReleased === false) {
         comingMovieSection.appendChild(createMovie(moviez));
