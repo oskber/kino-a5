@@ -8,7 +8,7 @@ async function init() {
     const searchInput = document.querySelector(".sidebar__search-input");
     let activeCategory;
 
-    await fetch("../movies.json")
+    await fetch("https://anschoolacc.github.io/Uppgift-2-En-biograf-sajt/movies.JSON")
         .then((res) => res.json())
         .then((data) => {
             const categories = [...new Set(data.map((movie) => movie.category))];
