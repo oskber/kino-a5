@@ -12,9 +12,7 @@
 
 <body>
   <header class="Header">
-    <div class="Header__div">
-      <!-- Black div inside header -->
-    </div>
+
     <img class="Header__logo" src="assets/bihjografenlogo.png" alt="logo of the site" />
     <nav class="Header__nav">
       <ul class="Header__nav__ul">
@@ -44,6 +42,17 @@
         <a href="pages/movies.html">Se alla filmer</a>
       </button>
     </section>
+
+    <!-- Coming movies section should be the last section! -->
+
+    <section class="comingMovies">
+      <h1 class="commingMovies__title">Kommande filmer</h1>
+      <div class="comingMovies__Container">
+      </div>
+      <!--coming movies is created in coming__movies__Container. -->
+      <button class="viewCurrent__btn"><a href="pages/movies.html">Se alla filmer</a></button>
+    </section>
+
   </main>
   <footer></footer>
   <template class="movieTemplate">
@@ -54,7 +63,7 @@
       <p class="movieTemplate__ageLimit"></p>
       <p class="movieTemplate__category"></p>
       <p class="movieTemplate__description"></p>
-      <button class="movieTemplate__button" type="button"></button>
+      <button class="movieTemplate__button" type="button">Boka biljett</button>
     </div>
   </template>
 </body>

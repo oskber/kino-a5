@@ -5,7 +5,6 @@ async function fetchMovies() {
 
 const movies = await fetchMovies();
 
-console.log(movies);
 
 if (window.location.pathname.includes("movies")) {
   const container = document.querySelector(".allMovies");
@@ -41,7 +40,7 @@ function renderCurrentMovies() {
   for (let i = 0; i < movies.length; i++) {
     const movie = movies[i];
 
-    if (movie.isNew === true && cardsRendered < maxCardsToShow) {
+    if (movie.isNew === true && cardsRendered < maxCardsToShow && currentMovies) {
       const movieCard = createMovie(movie);
       currentMovies.appendChild(movieCard);
       console.log(movie);
@@ -72,3 +71,23 @@ function createMovie(movie) {
   cardCover.style.backgroundImage = `url(${movie.image})`;
   return temp;
 }
+
+
+//Rendering "coming movies".
+class RenderComingMovies {
+
+  renderMovies() {
+    const comingMovieSection = document.querySelector('.comingMovies__Container');
+    movies.forEach(moviez => {
+      if (moviez.isReleased === false) {
+        comingMovieSection.appendChild(createMovie(moviez));
+      }
+    })
+  }
+}
+//Calling new instance of class.
+const renderer = new RenderComingMovies
+renderer.renderMovies();
+
+
+
