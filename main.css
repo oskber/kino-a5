@@ -44,6 +44,9 @@ body {
   padding: 3px;
   margin-left: 2em;
 }
+.Header .Header__logo__a {
+  margin-right: auto;
+}
 .Header .Header__nav {
   margin-top: 5em;
   min-width: 60%;
