@@ -53,25 +53,16 @@ body {
     display: flex;
     justify-content: center;
     gap: 2em;
-
   }
 
   .viewCurrent__btn {
     align-self: center;
   }
-
-
 }
-
-
-
-
-
-
 
 .viewTop3 {
   text-align: center;
-  padding: 5rem 5rem;
+  padding-top: 5rem;
 
   &__container {
     display: flex;
