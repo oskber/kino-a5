@@ -1,10 +1,11 @@
 async function fetchMovies() {
-  const response = await fetch("https://anschoolacc.github.io/Uppgift-2-En-biograf-sajt/movies.JSON"); // "/movies.JSON"
+  const response = await fetch(
+    "https://anschoolacc.github.io/Uppgift-2-En-biograf-sajt/movies.JSON"
+  ); // "/movies.JSON"
   return await response.json();
 }
 
 const movies = await fetchMovies();
-
 
 if (window.location.pathname.includes("movies")) {
   const container = document.querySelector(".allMovies");
@@ -40,7 +41,11 @@ function renderCurrentMovies() {
   for (let i = 0; i < movies.length; i++) {
     const movie = movies[i];
 
-    if (movie.isNew === true && cardsRendered < maxCardsToShow && currentMovies) {
+    if (
+      movie.isNew === true &&
+      cardsRendered < maxCardsToShow &&
+      currentMovies
+    ) {
       const movieCard = createMovie(movie);
       currentMovies.appendChild(movieCard);
       console.log(movie);
@@ -72,22 +77,57 @@ function createMovie(movie) {
   return temp;
 }
 
-
 //Rendering "coming movies".
 class RenderComingMovies {
-
   renderMovies() {
-    const comingMovieSection = document.querySelector('.comingMovies__Container');
-    movies.forEach(moviez => {
-      if (moviez.isReleased === false) {
-        comingMovieSection.appendChild(createMovie(moviez));
-      }
-    })
+    const comingMovieSection = document.querySelector(
+      ".comingMovies__Container"
+    );
+    if (comingMovieSection !== null) {
+      movies.forEach((moviez) => {
+        if (moviez.isReleased === false) {
+          comingMovieSection.appendChild(createMovie(moviez));
+        }
+      });
+    }
   }
 }
 //Calling new instance of class.
-const renderer = new RenderComingMovies
+const renderer = new RenderComingMovies();
 renderer.renderMovies();
 
+//modal
 
+const btnsOpenModal = document.querySelectorAll(".movieTemplate__button");
+const btnCloseModal = document.querySelector(".modal__close-modal");
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+const cancelBtn = document.querySelector(".modal__btns__cancel");
+const btnBook = document.querySelector(".modal__btns__book");
 
+const openModal = function () {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+  console.log(btnsOpenModal);
+};
+
+const closeModal = function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+  document.querySelector(".modal__offLine").style.color = "#464646";
+};
+
+btnCloseModal.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
+
+const offlineMessage = function () {
+  console.log("Offline message function is running");
+  document.querySelector(".modal__offLine").style.color = "#800020";
+};
+
+btnBook.addEventListener("click", offlineMessage);
+
+cancelBtn.addEventListener("click", closeModal);
+
+for (let i = 0; i < btnsOpenModal.length; i++)
+  btnsOpenModal[i].addEventListener("click", openModal);
