@@ -200,6 +200,7 @@ body {
   font-size: 3rem;
   margin: 0 1rem;
   border: none;
+  cursor: pointer;
 }
 .viewCurrent__carouselPrev:hover {
   color: rgba(255, 166, 0, 0.8705882353);
@@ -211,6 +212,7 @@ body {
   font-size: 3rem;
   margin: 0 1rem;
   border: none;
+  cursor: pointer;
 }
 .viewCurrent__carouselNext:hover {
   color: rgba(255, 166, 0, 0.8705882353);
