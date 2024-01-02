@@ -7,22 +7,17 @@ To do this you write @import "insert .scss file name here".*/
   margin: 0;
 }
 
-main {
+body {
   background-color: black;
 }
 
 .Header {
   background-color: #800020;
-  width: 100%;
   height: 10em;
   display: flex;
   flex-flow: column;
   align-items: end;
-}
-.Header .Header__div {
-  width: 100%;
-  background-color: black;
-  height: 2em;
+  margin-top: 2em;
 }
 .Header .Header__nav {
   margin-top: 5em;
@@ -38,6 +33,26 @@ main {
   font-size: 1.4em;
   text-decoration: none;
   color: white;
+}
+
+.comingMovies {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 1em;
+}
+.comingMovies .commingMovies__title {
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.comingMovies .comingMovies__Container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+.comingMovies .viewCurrent__btn {
+  align-self: center;
 }
 
 .viewTop3 {

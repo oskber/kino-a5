@@ -4,22 +4,18 @@
   margin: 0;
 }
 
-main {
+body {
   background-color: black;
 }
 
 .Header {
   background-color: #800020;
-  width: 100%;
   height: 10em;
   display: flex;
   flex-flow: column;
   align-items: end;
-  .Header__div {
-    width: 100%;
-    background-color: black;
-    height: 2em;
-  }
+  margin-top: 2em;
+
   .Header__nav {
     margin-top: 5em;
     min-width: 60%;
@@ -30,6 +26,7 @@ main {
       display: flex;
       gap: 8em;
     }
+
     .Header__nav__ul__li {
       a {
         font-size: 1.4em;
@@ -39,21 +36,57 @@ main {
     }
   }
 }
+
+.comingMovies {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 1em;
+
+  .commingMovies__title {
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  .comingMovies__Container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+
+  }
+
+  .viewCurrent__btn {
+    align-self: center;
+  }
+
+
+}
+
+
+
+
+
+
+
 .viewTop3 {
   text-align: center;
   padding: 5rem 5rem;
+
   &__container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
   }
+
   &__title {
     color: whitesmoke;
     font-size: 2rem;
     font-weight: 900;
     padding: 1rem 1rem;
   }
+
   &__btn {
     align-self: end;
     background-color: #ffa500;
@@ -74,9 +107,11 @@ main {
     &:hover {
       background-color: #ffa600de;
     }
+
     &:active {
       background-color: #ffa500;
     }
+
     a {
       text-decoration: none;
       color: whitesmoke;
@@ -87,18 +122,21 @@ main {
 .viewCurrent {
   text-align: center;
   padding: 5rem 5rem;
+
   &__container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
   }
+
   &__title {
     color: whitesmoke;
     font-size: 2rem;
     font-weight: 900;
     padding: 1rem 1rem;
   }
+
   &__btn {
     align-self: end;
     background-color: #ffa500;
@@ -119,6 +157,7 @@ main {
     &:hover {
       background-color: #ffa600de;
     }
+
     &:active {
       background-color: #ffa500;
     }
