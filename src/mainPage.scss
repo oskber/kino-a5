@@ -50,6 +50,7 @@ body {
   flex-flow: column;
   align-items: center;
   gap: 1em;
+  margin: 1rem 1rem;
 
   .commingMovies__title {
     color: whitesmoke;
@@ -69,8 +70,11 @@ body {
 }
 
 .viewTop3 {
-  text-align: center;
-  padding: 5rem 5rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 1em;
+  margin: 1rem 1rem;
 
   &__container {
     display: flex;
@@ -87,7 +91,7 @@ body {
   }
 
   &__btn {
-    align-self: end;
+    align-self: center;
     background-color: #ffa500;
     border: none;
     border-radius: 3px;
@@ -99,7 +103,7 @@ body {
     grid-row: 10 / span 1;
     height: 30px;
     justify-self: end;
-    margin: 20px 10px 10px 0px;
+    margin: 10px 10px;
     text-shadow: 1px 1px 0px rgba(#000000, 0.5);
     width: 120px;
 
@@ -119,8 +123,11 @@ body {
 }
 
 .viewCurrent {
-  text-align: center;
-  padding: 5rem 5rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 1em;
+  margin: 1rem 1rem;
 
   &__container {
     display: flex;
@@ -137,7 +144,7 @@ body {
   }
 
   &__btn {
-    align-self: end;
+    align-self: center;
     background-color: #ffa500;
     border: none;
     border-radius: 3px;
@@ -149,7 +156,7 @@ body {
     grid-row: 10 / span 1;
     height: 30px;
     justify-self: end;
-    margin: 20px 10px 10px 0px;
+    margin: 10px 10px;
     text-shadow: 1px 1px 0px rgba(#000000, 0.5);
     width: 120px;
 

@@ -10,20 +10,14 @@ const movies = await fetchMovies();
 if (window.location.pathname.includes("movies")) {
   const container = document.querySelector(".allMovies");
   renderMovies(container);
-} else if (window.location.pathname.includes("index")) {
-  const container = document.querySelector(".viewTop3__container");
-  renderMovies(container, true);
 }
 
 //this function renders movies to movies.html and top3 on index.html
-function renderMovies(container, top3) {
+function renderMovies(container) {
   if (!movies) return;
   let render;
-  if (top3) {
-    render = movies.sort((a, b) => b.rating - a.rating).slice(0, 3);
-  } else {
-    render = movies;
-  }
+
+  render = movies;
 
   render.forEach((movie) => {
     const movieCard = createMovie(movie);
@@ -31,15 +25,25 @@ function renderMovies(container, top3) {
   });
 }
 
-//function to render current movies
-const currentMovies = document.querySelector(".viewCurrent__container");
+class TopThree {
+  renderTopThree() {
+    const container = document.querySelector(".viewTop3__container");
+    const sorted = movies.sort((a, b) => b.rating - a.rating).slice(0, 3);
 
-function renderCurrentMovies() {
-  const maxCardsToShow = 5;
-  let cardsRendered = 0;
+    sorted.forEach((movie) => {
+      container.appendChild(createMovie(movie));
+    });
+  }
+}
 
-  for (let i = 0; i < movies.length; i++) {
-    const movie = movies[i];
+class CurrentMovies {
+  renderCurrentMovies() {
+    const currentMovies = document.querySelector(".viewCurrent__container");
+    const maxCardsToShow = 5;
+    let cardsRendered = 0;
+
+    for (let i = 0; i < movies.length; i++) {
+      const movie = movies[i];
 
     if (
       movie.isNew === true &&
@@ -53,8 +57,6 @@ function renderCurrentMovies() {
     }
   }
 }
-//run function
-renderCurrentMovies();
 
 function createMovie(movie) {
   const movieTemplate = document.querySelector(".movieTemplate");
@@ -83,6 +85,7 @@ class RenderComingMovies {
     const comingMovieSection = document.querySelector(
       ".comingMovies__Container"
     );
+
     if (comingMovieSection !== null) {
       movies.forEach((moviez) => {
         if (moviez.isReleased === false) {
@@ -95,6 +98,12 @@ class RenderComingMovies {
 //Calling new instance of class.
 const renderer = new RenderComingMovies();
 renderer.renderMovies();
+//render current movies
+const current = new CurrentMovies();
+current.renderCurrentMovies();
+
+const topThree = new TopThree();
+topThree.renderTopThree();
 
 //modal
 
