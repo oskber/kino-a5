@@ -41,7 +41,7 @@ function renderCurrentMovies() {
   for (let i = 0; i < movies.length; i++) {
     const movie = movies[i];
 
-    if (movie.isNew === true && cardsRendered < maxCardsToShow) {
+    if (movie.isNew === true && cardsRendered < maxCardsToShow && currentMovies) {
       const movieCard = createMovie(movie);
       currentMovies.appendChild(movieCard);
       console.log(movie);
