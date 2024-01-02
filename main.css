@@ -128,18 +128,34 @@ body {
   color: whitesmoke;
 }
 
+.movieTemplate__card {
+  scroll-snap-align: center;
+  min-width: 250px;
+  height: 400px;
+}
+
 .viewCurrent {
   display: flex;
   flex-flow: column;
+  justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 1rem;
   margin: 1rem 1rem;
 }
 .viewCurrent__container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2rem;
+  max-width: 80vw;
+  scroll-behavior: smooth;
+  transition: all 0.25s ease-in;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+.viewCurrent__container::-webkit-scrollbar {
+  display: none;
 }
 .viewCurrent__title {
   color: whitesmoke;
@@ -173,6 +189,31 @@ body {
 .viewCurrent__btn a {
   text-decoration: none;
   color: whitesmoke;
+}
+.viewCurrent__carousel {
+  display: flex;
+}
+.viewCurrent__carouselPrev {
+  background: none;
+  color: #ffa500;
+  align-self: center;
+  font-size: 3rem;
+  margin: 0 1rem;
+  border: none;
+}
+.viewCurrent__carouselPrev:hover {
+  color: rgba(255, 166, 0, 0.8705882353);
+}
+.viewCurrent__carouselNext {
+  background: none;
+  color: #ffa500;
+  align-self: center;
+  font-size: 3rem;
+  margin: 0 1rem;
+  border: none;
+}
+.viewCurrent__carouselNext:hover {
+  color: rgba(255, 166, 0, 0.8705882353);
 }
 
 * {
