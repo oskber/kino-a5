@@ -4,7 +4,12 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>BiHjoGrafen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js" type="module"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <script src="main.js" type="module"></script>
@@ -19,7 +24,13 @@
         <li class="Header__nav__ul__li">
           <a href="pages/movies.html">Filmer</a>
         </li>
+        <li class="Header__nav__ul__li">
+          <a href="pages/movies.html">Filmer</a>
+        </li>
         <li class="Header__nav__ul__li"><a href="">Biljetter</a></li>
+        <li class="Header__nav__ul__li">
+          <a href="pages/aboutUs.html">Om oss</a>
+        </li>
         <li class="Header__nav__ul__li">
           <a href="pages/aboutUs.html">Om oss</a>
         </li>
@@ -34,9 +45,17 @@
       <button class="viewTop3__btn">
         <a href="pages/movies.html">Se alla filmer</a>
       </button>
+      <div class="viewTop3__container"></div>
+      <button class="viewTop3__btn">
+        <a href="pages/movies.html">Se alla filmer</a>
+      </button>
     </section>
     <section class="viewCurrent">
       <h1 class="viewCurrent__title">AKTUELLA</h1>
+      <div class="viewCurrent__container"></div>
+      <button class="viewCurrent__btn">
+        <a href="pages/movies.html">Se alla filmer</a>
+      </button>
       <div class="viewCurrent__container"></div>
       <button class="viewCurrent__btn">
         <a href="pages/movies.html">Se alla filmer</a>
@@ -47,14 +66,22 @@
 
     <section class="comingMovies">
       <h1 class="commingMovies__title">Kommande filmer</h1>
-      <div class="comingMovies__Container">
-      </div>
+      <div class="comingMovies__Container"></div>
       <!--coming movies is created in coming__movies__Container. -->
-      <button class="viewCurrent__btn"><a href="pages/movies.html">Se alla filmer</a></button>
+      <button class="viewCurrent__btn">
+        <a href="pages/movies.html">Se alla filmer</a>
+      </button>
     </section>
-
   </main>
-  <footer></footer>
+  <footer class="footer">
+    <div class="footer__container">
+      <a class="footer__a" href="#about">Om oss</a>
+      <a class="footer__a" href="#location">Plats</a>
+      <a class="footer__a" href="#facebook">Facebook</a>
+      <a class="footer__a" href="#twitter">Twitter</a>
+      <a class="footer__a" href="#instagram">Instagram</a>
+    </div>
+  </footer>
   <template class="movieTemplate">
     <div class="movieTemplate__card">
       <div class="movieTemplate__cover"></div>
@@ -63,7 +90,9 @@
       <p class="movieTemplate__ageLimit"></p>
       <p class="movieTemplate__category"></p>
       <p class="movieTemplate__description"></p>
-      <button class="movieTemplate__button" type="button">Boka biljett</button>
+      <button class="movieTemplate__button" type="button">
+        Boka biljett
+      </button>
     </div>
   </template>
 </body>
