@@ -16,6 +16,14 @@ body {
   align-items: end;
   margin-top: 2em;
 
+  .Header__logo {
+    height: 9.5em;
+    width: auto;
+    margin-right: auto;
+    margin-bottom: -7.5em;
+    padding: 3px;
+    margin-left: 2em;
+  }
   .Header__nav {
     margin-top: 5em;
     min-width: 60%;

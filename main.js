@@ -45,16 +45,15 @@ class CurrentMovies {
     for (let i = 0; i < movies.length; i++) {
       const movie = movies[i];
 
-      if (
-        movie.isNew === true &&
-        cardsRendered < maxCardsToShow &&
-        currentMovies
-      ) {
-        const movieCard = createMovie(movie);
-        currentMovies.appendChild(movieCard);
-        console.log(movie);
-        cardsRendered++;
-      }
+    if (
+      movie.isNew === true &&
+      cardsRendered < maxCardsToShow &&
+      currentMovies
+    ) {
+      const movieCard = createMovie(movie);
+      currentMovies.appendChild(movieCard);
+      console.log(movie);
+      cardsRendered++;
     }
   }
 }
@@ -86,11 +85,14 @@ class RenderComingMovies {
     const comingMovieSection = document.querySelector(
       ".comingMovies__Container"
     );
-    movies.forEach((moviez) => {
-      if (moviez.isReleased === false) {
-        comingMovieSection.appendChild(createMovie(moviez));
-      }
-    });
+
+    if (comingMovieSection !== null) {
+      movies.forEach((moviez) => {
+        if (moviez.isReleased === false) {
+          comingMovieSection.appendChild(createMovie(moviez));
+        }
+      });
+    }
   }
 }
 //Calling new instance of class.
@@ -102,3 +104,39 @@ current.renderCurrentMovies();
 
 const topThree = new TopThree();
 topThree.renderTopThree();
+
+//modal
+
+const btnsOpenModal = document.querySelectorAll(".movieTemplate__button");
+const btnCloseModal = document.querySelector(".modal__close-modal");
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+const cancelBtn = document.querySelector(".modal__btns__cancel");
+const btnBook = document.querySelector(".modal__btns__book");
+
+const openModal = function () {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+  console.log(btnsOpenModal);
+};
+
+const closeModal = function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+  document.querySelector(".modal__offLine").style.color = "#464646";
+};
+
+btnCloseModal.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
+
+const offlineMessage = function () {
+  console.log("Offline message function is running");
+  document.querySelector(".modal__offLine").style.color = "#800020";
+};
+
+btnBook.addEventListener("click", offlineMessage);
+
+cancelBtn.addEventListener("click", closeModal);
+
+for (let i = 0; i < btnsOpenModal.length; i++)
+  btnsOpenModal[i].addEventListener("click", openModal);
