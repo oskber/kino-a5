@@ -20,12 +20,12 @@ body {
   margin-top: 2em;
 }
 .Header .Header__logo {
-  height: 7.5em;
+  height: 9.5em;
   width: auto;
   margin-right: auto;
   margin-bottom: -7.5em;
   padding: 3px;
-  margin-left: 2em;
+  margin-left: 5em;
 }
 .Header .Header__nav {
   margin-top: 5em;
