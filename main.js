@@ -30,9 +30,11 @@ class TopThree {
     const container = document.querySelector(".viewTop3__container");
     const sorted = movies.sort((a, b) => b.rating - a.rating).slice(0, 3);
 
-    sorted.forEach((movie) => {
-      container.appendChild(createMovie(movie));
-    });
+    if (container !== null) {
+      sorted.forEach((movie) => {
+        container.appendChild(createMovie(movie));
+      });
+    }
   }
 }
 
@@ -45,18 +47,17 @@ class CurrentMovies {
     for (let i = 0; i < movies.length; i++) {
       const movie = movies[i];
 
-    if (
-      movie.isNew === true &&
-      cardsRendered < maxCardsToShow &&
-      currentMovies
-    ) {
-      const movieCard = createMovie(movie);
-      currentMovies.appendChild(movieCard);
-      console.log(movie);
-      cardsRendered++;
+      if (
+        movie.isNew === true &&
+        cardsRendered < maxCardsToShow &&
+        currentMovies !== null
+      ) {
+        const movieCard = createMovie(movie);
+        currentMovies.appendChild(movieCard);
+        cardsRendered++;
+      }
     }
   }
-}
 }
 
 function createMovie(movie) {
