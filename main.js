@@ -57,6 +57,7 @@ class CurrentMovies {
     }
   }
 }
+}
 
 function createMovie(movie) {
   const movieTemplate = document.querySelector(".movieTemplate");
