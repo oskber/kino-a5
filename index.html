@@ -10,9 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <script src="main.js" type="module"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  <script src="main.js" type="module"></script>
+  <script src="https://kit.fontawesome.com/4c51990d8f.js"></script>
 </head>
 
 <body>
@@ -81,6 +79,31 @@
       </button>
     </div>
   </template>
+  <div class="modal hidden">
+    <button class="modal__close-modal">
+      <i class="fa-solid fa-skull-crossbones"></i>
+    </button>
+    <div class="modal__select-wrapper">
+      <p class="modal__p date">Date</p>
+      <select name="date" class="date-list">
+        <option value="2023-12-30">December 30, 2023</option>
+        <option value="2023-12-31">December 31, 2023</option>
+      </select>
+    </div>
+    <div class="modal__select-wrapper">
+      <p class="modal__p time">Time</p>
+      <select name="time" class="time-list">
+        <option value="09:00">9:00 AM</option>
+        <option value="12:00">12:00 PM</option>
+      </select>
+    </div>
+    <div class="modal__btns">
+      <button class="modal__btns__book">Book</button>
+      <button class="modal__btns__cancel">Cancel</button>
+      <p class="modal__offLine">Currently offline. Call 555-98764.</p>
+    </div>
+  </div>
+  <div class="overlay hidden"></div>
 </body>
 
 </html>
