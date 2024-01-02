@@ -152,13 +152,17 @@ class Carousel {
     const itemWidth = 250;
     const padding = 16;
 
-    prevBtn.addEventListener("click", () => {
-      container.scrollLeft -= itemWidth + padding;
-    });
+    if (prevBtn !== null) {
+      prevBtn.addEventListener("click", () => {
+        container.scrollLeft -= itemWidth + padding;
+      });
+    }
 
-    nextBtn.addEventListener("click", () => {
-      container.scrollLeft += itemWidth + padding;
-    });
+    if (nextBtn !== null) {
+      nextBtn.addEventListener("click", () => {
+        container.scrollLeft += itemWidth + padding;
+      });
+    }
   }
 }
 
