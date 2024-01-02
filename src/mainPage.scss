@@ -63,8 +63,9 @@ body {
 
   .comingMovies__Container {
     display: flex;
-    justify-content: center;
     gap: 2em;
+    width: 55em;
+    overflow-x: scroll;
   }
 
   .viewCurrent__btn {

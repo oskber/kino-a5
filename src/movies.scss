@@ -148,6 +148,7 @@ body {
         overflow: hidden;
         text-shadow: 2px 2px 2px rgba(#000000, 0.4);
         width: 250px;
+        min-width: 250px;
 
         &:hover .movieTemplate__cover {
             transform: translateY(-100%);
