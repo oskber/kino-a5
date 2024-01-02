@@ -381,3 +381,39 @@ body {
 .movieTemplate__button:active {
   background-color: #ffa500;
 }
+
+@media screen and (max-width: 552px) {
+  .aboutUsMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.openHours {
+  color: whitesmoke;
+  margin: 100px 0 100px 200px;
+  font-family: roboto;
+}
+@media screen and (max-width: 552px) {
+  .openHours {
+    margin: 100px 0 100px 0;
+  }
+}
+.openHours__title {
+  font-size: 2.5rem;
+  margin: 0 0 1.8rem 0;
+  color: #ffa500;
+}
+.openHours__list {
+  font-size: 1.5rem;
+  list-style: none;
+}
+.openHours__times {
+  margin: 0 0 1rem 0;
+}
+.openHours__times--yellow {
+  color: #ffa500;
+  display: inline-block;
+  font-weight: 700;
+}
