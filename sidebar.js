@@ -26,12 +26,11 @@ async function init() {
         .catch((err) => console.log(err));
 
     sidebar.addEventListener("click", (e) => {
-        if (e.target === sidebarList) {
-            searchIcon.classList.remove("sidebar__search-icon--hidden");
-            searchInput.classList.remove("sidebar__search-input--open");
-        } else if (e.target === openSidebar) {
+        if (e.target === openSidebar) {
             sidebar.classList.toggle("sidebar__container--open");
             openSidebar.classList.toggle("fa-caret-left");
+            searchIcon.classList.remove("sidebar__search-icon--hidden");
+            searchInput.classList.remove("sidebar__search-input--open");
         } else if (e.target === searchIcon) {
             searchIcon.classList.toggle("sidebar__search-icon--hidden");
             searchInput.classList.toggle("sidebar__search-input--open");
