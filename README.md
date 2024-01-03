@@ -11,7 +11,6 @@
   <li>In HTML we format with HTML language feature.</li>
   <li>We do visual testing on all features added as they are mostly static with minimal JS.</li>
   <li>Preliminary we have dailyscrum at 9.30 everyday of the sprint.</li>
-  <li>Everyone on the project is responsible of merging his/her own PR´s but has to have atleast one review before merging </li>
   </ul>
 <hr>
 
