@@ -41,21 +41,20 @@ class TopThree {
 class CurrentMovies {
   renderCurrentMovies() {
     const currentMovies = document.querySelector(".viewCurrent__container");
-    const maxCardsToShow = 5;
-    let cardsRendered = 0;
+    /* const maxCardsToShow = 5;
+    let cardsRendered = 0; */
 
     for (let i = 0; i < movies.length; i++) {
       const movie = movies[i];
 
       if (
         movie.isNew === true &&
-        cardsRendered < maxCardsToShow &&
+        /* cardsRendered < maxCardsToShow && */
         currentMovies !== null
       ) {
         const movieCard = createMovie(movie);
         currentMovies.appendChild(movieCard);
-        console.log(movie);
-        cardsRendered++;
+        //cardsRendered++;
       }
     }
   }
@@ -146,3 +145,29 @@ cancelBtn.addEventListener("click", closeModal);
 }
 for (let i = 0; i < btnsOpenModal.length; i++)
   btnsOpenModal[i].addEventListener("click", openModal);
+
+class Carousel {
+  carouselFunction() {
+    const prevBtn = document.querySelector(".viewCurrent__carouselPrev");
+    const nextBtn = document.querySelector(".viewCurrent__carouselNext");
+    const container = document.querySelector(".viewCurrent__container");
+
+    const itemWidth = 250;
+    const padding = 16;
+
+    if (prevBtn !== null) {
+      prevBtn.addEventListener("click", () => {
+        container.scrollLeft -= itemWidth + padding;
+      });
+    }
+
+    if (nextBtn !== null) {
+      nextBtn.addEventListener("click", () => {
+        container.scrollLeft += itemWidth + padding;
+      });
+    }
+  }
+}
+
+const carousel = new Carousel();
+carousel.carouselFunction();
