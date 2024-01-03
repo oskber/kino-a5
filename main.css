@@ -77,8 +77,9 @@ body {
 }
 .comingMovies .comingMovies__Container {
   display: flex;
-  justify-content: center;
   gap: 2em;
+  width: 55em;
+  overflow-x: scroll;
 }
 .comingMovies .viewCurrent__btn {
   align-self: center;
@@ -319,6 +320,7 @@ body {
   overflow: hidden;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
   width: 250px;
+  min-width: 250px;
 }
 .movieTemplate__card:hover .movieTemplate__cover {
   transform: translateY(-100%);
