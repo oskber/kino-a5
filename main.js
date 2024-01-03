@@ -168,3 +168,13 @@ class Carousel {
 
 const carousel = new Carousel();
 carousel.carouselFunction();
+
+//search input for header
+const inputSearch = document.querySelector(".Header__nav__ul__li__search-input");
+const iconSearch = document.querySelector(".Header__nav__ul__li__search-icon");
+
+iconSearch.addEventListener("click", () => {
+  inputSearch.classList.remove("Header__nav__ul__li__search-input")
+  inputSearch.classList.toggle("Header__nav__ul__li__search-input--open")
+  iconSearch.classList.toggle("Header__nav__ul__li__search-icon--hidden")
+});

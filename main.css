@@ -64,18 +64,27 @@ body {
   color: white;
 }
 .Header .Header__nav .Header__nav__ul__li__search-input {
+  display: none;
+}
+.Header .Header__nav .Header__nav__ul__li__search-input--open {
   border: none;
   border-radius: 5px;
-  width: 100%;
+  width: auto;
   height: 2em;
-  padding: 1rem;
+  padding: 1em;
   background: rgba(235, 235, 235, 0.4);
   color: white;
 }
+.Header .Header__nav .Header__nav__ul__li__search-input--open:focus {
+  outline: none;
+}
 .Header .Header__nav .Header__nav__ul__li__search-icon {
   font-size: 1.4em;
-  display: none;
   color: white;
+  cursor: pointer;
+}
+.Header .Header__nav .Header__nav__ul__li__search-icon--hidden {
+  display: none !important;
 }
 
 .comingMovies {
