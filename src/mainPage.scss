@@ -2,6 +2,7 @@
   font-size: 100%;
   font-family: "Roboto", sans-serif;
   margin: 0;
+  max-width: 100%;
 }
 
 body {
@@ -126,18 +127,35 @@ body {
   }
 }
 
+.movieTemplate__card {
+  scroll-snap-align: center;
+  min-width: 250px;
+  height: 400px;
+}
+
 .viewCurrent {
   display: flex;
   flex-flow: column;
+  justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 1rem;
   margin: 1rem 1rem;
 
   &__container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     gap: 2rem;
+    max-width: 80vw;
+    scroll-behavior: smooth;
+    transition: all 0.25s ease-in;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  &__container::-webkit-scrollbar {
+    display: none;
   }
 
   &__title {
@@ -175,6 +193,36 @@ body {
     a {
       text-decoration: none;
       color: whitesmoke;
+    }
+  }
+  &__carousel {
+    display: flex;
+    overflow-x: hidden;
+  }
+  &__carouselPrev {
+    background: none;
+    color: #ffa500;
+    align-self: center;
+    font-size: 3rem;
+    margin: 0 1rem;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      color: #ffa600de;
+    }
+  }
+  &__carouselNext {
+    background: none;
+    color: #ffa500;
+    align-self: center;
+    font-size: 3rem;
+    margin: 0 1rem;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      color: #ffa600de;
     }
   }
 }
