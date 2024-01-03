@@ -338,6 +338,7 @@ body {
   gap: 2rem;
   justify-content: center;
   max-width: 1200px;
+  margin-bottom: 100px;
 }
 @media screen and (max-width: 552px) {
   .allMovies {
@@ -350,6 +351,9 @@ body {
   font-weight: 900;
   padding: 1rem 1rem;
   text-align: center;
+}
+.allMovies .movie--hidden {
+  display: none;
 }
 
 .movieTemplate__card {
