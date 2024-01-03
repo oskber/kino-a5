@@ -35,11 +35,6 @@ class TopThree {
         container.appendChild(createMovie(movie));
       });
     }
-    if (container !== null) {
-      sorted.forEach((movie) => {
-        container.appendChild(createMovie(movie));
-      });
-    }
   }
 }
 
