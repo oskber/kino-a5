@@ -128,20 +128,20 @@ const closeModal = function () {
   document.querySelector(".modal__offLine").style.color = "#464646";
 };
 
-if(btnCloseModal !== null) {
-btnCloseModal.addEventListener("click", closeModal);
-overlay.addEventListener("click", closeModal);
+if (btnCloseModal !== null) {
+  btnCloseModal.addEventListener("click", closeModal);
+  overlay.addEventListener("click", closeModal);
 }
 const offlineMessage = function () {
   console.log("Offline message function is running");
   document.querySelector(".modal__offLine").style.color = "#800020";
 };
 
-if(btnBook !== null) {
-btnBook.addEventListener("click", offlineMessage);
+if (btnBook !== null) {
+  btnBook.addEventListener("click", offlineMessage);
 }
-if(cancelBtn !== null) {
-cancelBtn.addEventListener("click", closeModal);
+if (cancelBtn !== null) {
+  cancelBtn.addEventListener("click", closeModal);
 }
 for (let i = 0; i < btnsOpenModal.length; i++)
   btnsOpenModal[i].addEventListener("click", openModal);
