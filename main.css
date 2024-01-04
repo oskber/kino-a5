@@ -78,6 +78,9 @@ body {
 .Header .Header__nav .Header__nav__ul__li__search-input--open:focus {
   outline: none;
 }
+.Header .Header__nav .Header__nav__ul__li__search-input--open::placeholder {
+  color: white;
+}
 .Header .Header__nav .Header__nav__ul__li__search-icon {
   font-size: 1.4em;
   color: white;

@@ -60,6 +60,9 @@ body {
       &:focus {
         outline: none;
       }
+      &::placeholder {
+        color: white;
+      }
     }
     .Header__nav__ul__li__search-icon {
       font-size: 1.4em;
