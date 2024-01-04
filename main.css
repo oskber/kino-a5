@@ -63,6 +63,29 @@ body {
   text-decoration: none;
   color: white;
 }
+.Header .Header__nav .Header__nav__ul__li__search-input {
+  display: none;
+}
+.Header .Header__nav .Header__nav__ul__li__search-input--open {
+  border: none;
+  border-radius: 5px;
+  width: auto;
+  height: 2em;
+  padding: 1em;
+  background: rgba(235, 235, 235, 0.4);
+  color: white;
+}
+.Header .Header__nav .Header__nav__ul__li__search-input--open:focus {
+  outline: none;
+}
+.Header .Header__nav .Header__nav__ul__li__search-icon {
+  font-size: 1.4em;
+  color: white;
+  cursor: pointer;
+}
+.Header .Header__nav .Header__nav__ul__li__search-icon--hidden {
+  display: none !important;
+}
 
 .comingMovies {
   display: flex;
@@ -104,6 +127,7 @@ body {
   font-size: 2rem;
   font-weight: 900;
   padding: 1rem 1rem;
+  text-align: center;
 }
 .viewTop3__btn {
   align-self: center;
@@ -338,6 +362,7 @@ body {
   gap: 2rem;
   justify-content: center;
   max-width: 1200px;
+  margin-bottom: 100px;
 }
 @media screen and (max-width: 552px) {
   .allMovies {
@@ -350,6 +375,9 @@ body {
   font-weight: 900;
   padding: 1rem 1rem;
   text-align: center;
+}
+.allMovies .movie--hidden {
+  display: none;
 }
 
 .movieTemplate__card {
