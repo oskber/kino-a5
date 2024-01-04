@@ -56,7 +56,9 @@
         <li class="Header__nav__ul__li"><a href="">Biljetter</a></li>
         <li class="Header__nav__ul__li"><a href="aboutUs.html">Om oss</a></li>
         <li class="Header__nav__ul__li">
-          <input class="Header__nav__ul__li__search-input" type="text" />
+          <input class="Header__nav__ul__li__search-input" type="text" placeholder="Search..." 
+          onfocus="this.placeholder = ''" 
+          onblur="this.placeholder = 'Search...'"/>
           <i class="fas fa-search Header__nav__ul__li__search-icon">
           </i>
         </li>
