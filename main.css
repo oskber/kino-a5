@@ -10,7 +10,7 @@ To do this you write @import "insert .scss file name here".*/
 }
 .footer__container {
   display: flex;
-  gap: 8em;
+  gap: 8rem;
   padding: 1.5em 0 1.5em 0;
 }
 .footer__a {
