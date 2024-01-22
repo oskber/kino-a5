@@ -119,7 +119,6 @@ const btnBook = document.querySelector(".modal__btns__book");
 const openModal = function () {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
-  console.log(btnsOpenModal);
 };
 
 const closeModal = function () {
