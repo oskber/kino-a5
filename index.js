@@ -8,7 +8,7 @@ app.set("view engine", "handlebars");
 app.set("views", "./templates");
 
 app.get("/", async (request, response) => {
-  const filePath = "/static/index.html";
+  const filePath = "static/index.html";
   const buf = await fs.readFile(filePath);
   const html = buf.toString();
 
