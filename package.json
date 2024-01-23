@@ -6,7 +6,7 @@
   "scripts": {
     "sass:watch": "sass --no-source-map --watch src/main.scss main.css",
     "sass:compile": "sass --no-source-map src/main.scss main.css",
-    "dev": "nodemon ."
+    "start": "nodemon ."
   },
   "type": "module",
   "author": "",
@@ -17,6 +17,9 @@
   },
   "dependencies": {
     "express": "^4.18.2",
-    "express-handlebars": "^7.1.2"
+    "express-handlebars": "^7.1.2",
+    "fs.promises": "^0.1.2",
+    "handlebars": "^4.7.8",
+    "node-fetch": "^3.3.2"
   }
 }

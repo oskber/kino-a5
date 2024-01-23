@@ -41,20 +41,13 @@ class TopThree {
 class CurrentMovies {
   renderCurrentMovies() {
     const currentMovies = document.querySelector(".viewCurrent__container");
-    /* const maxCardsToShow = 5;
-    let cardsRendered = 0; */
 
     for (let i = 0; i < movies.length; i++) {
       const movie = movies[i];
 
-      if (
-        movie.isNew === true &&
-        /* cardsRendered < maxCardsToShow && */
-        currentMovies !== null
-      ) {
+      if (movie.isNew === true && currentMovies !== null) {
         const movieCard = createMovie(movie);
         currentMovies.appendChild(movieCard);
-        //cardsRendered++;
       }
     }
   }
@@ -172,11 +165,13 @@ const carousel = new Carousel();
 carousel.carouselFunction();
 
 //search input for header
-const inputSearch = document.querySelector(".Header__nav__ul__li__search-input");
+const inputSearch = document.querySelector(
+  ".Header__nav__ul__li__search-input"
+);
 const iconSearch = document.querySelector(".Header__nav__ul__li__search-icon");
 
 iconSearch.addEventListener("click", () => {
-  inputSearch.classList.remove("Header__nav__ul__li__search-input")
-  inputSearch.classList.toggle("Header__nav__ul__li__search-input--open")
-  iconSearch.classList.toggle("Header__nav__ul__li__search-icon--hidden")
+  inputSearch.classList.remove("Header__nav__ul__li__search-input");
+  inputSearch.classList.toggle("Header__nav__ul__li__search-input--open");
+  iconSearch.classList.toggle("Header__nav__ul__li__search-icon--hidden");
 });

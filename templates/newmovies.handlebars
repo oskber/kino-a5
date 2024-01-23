@@ -1,0 +1,26 @@
+<main class="moviesMain">
+  <aside class="sidebar">
+    <div class="sidebar__container">
+      <ul class="sidebar__list">
+        <li class="sidebar__list-item">
+          <input class="sidebar__search-input" type="text" />
+          <i class="fas fa-search sidebar__search-icon"></i>
+        </li>
+      </ul>
+      <i class="fa-solid fa-caret-right sidebar__toggle-menu"></i>
+    </div>
+  </aside>
+  <section class="newMovies">
+    <div class="newMovies__container">
+      <ul>
+        {{#each movies }}
+        <li>
+          <a href="/movies/{{ this.id }}">
+            {{ this.attributes.title }}
+          </a>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </section>
+</main>

@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+{{!-- <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" media="screen" href="/static/main.css" />
-  <script src="/main.js" type="module"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="/static/style/main.css" />
+  <script src="/static/main.js" type="module"></script>
   <script src="https://kit.fontawesome.com/4c51990d8f.js"></script>
 
   <!-- Primary Meta Tags -->
@@ -35,16 +35,19 @@
 
 <body>
   <header class="Header">
-    <a class="Header__logo__a" href="/static/index.html">
-      <img class="Header__logo" src="/assets/bihjografenlogo.png" alt="logo of the site" /></a>
+    <a class="Header__logo__a" href="/">
+      <img class="Header__logo" src="/static/assets/bihjografenlogo.png" alt="logo of the site" /></a>
     <nav class="Header__nav">
       <ul class="Header__nav__ul">
         <li class="Header__nav__ul__li">
-          <a href="/pages/movies.html">Filmer</a>
+          <a href="/movies">Filmer</a>
         </li>
         <li class="Header__nav__ul__li"><a href="">Biljetter</a></li>
         <li class="Header__nav__ul__li">
-          <a href="/pages/aboutUs.html">Om oss</a>
+          <a href="/aboutus">Om oss</a>
+        </li>
+        <li class="Header__nav__ul__li">
+          <a href="/newmovies">Nya filmer</a>
         </li>
         <li class="Header__nav__ul__li">
           <input class="Header__nav__ul__li__search-input" type="text" placeholder="Search..."
@@ -55,13 +58,13 @@
         </li>
       </ul>
     </nav>
-  </header>
+  </header> --}}
   <main>
     <section class="viewTop3">
       <h1 class="viewTop3__title">TOPP 3</h1>
       <div class="viewTop3__container"></div>
       <button class="viewTop3__btn">
-        <a href="/pages/movies.html">Se alla filmer</a>
+        <a href="/movies">Se alla filmer</a>
       </button>
     </section>
     <section class="viewCurrent">
@@ -72,7 +75,7 @@
         <button class="viewCurrent__carouselNext"><i class="fas fa-arrow-right"></i></button>
       </div>
       <button class="viewCurrent__btn">
-        <a href="/pages/movies.html">Se alla filmer</a>
+        <a href="/movies">Se alla filmer</a>
       </button>
     </section>
 
@@ -83,11 +86,11 @@
       <div class="comingMovies__Container"></div>
       <!--coming movies is created in coming__movies__Container. -->
       <button class="viewCurrent__btn">
-        <a href="/pages/movies.html">Se alla filmer</a>
+        <a href="/movies">Se alla filmer</a>
       </button>
     </section>
   </main>
-  <footer class="footer">
+  {{!-- <footer class="footer">
     <div class="footer__container">
       <a class="footer__a" href="#about">Om oss</a>
       <a class="footer__a" href="#location">Plats</a>
@@ -138,4 +141,4 @@
   <div class="overlay hidden"></div>
 </body>
 
-</html>
+</html> --}}
