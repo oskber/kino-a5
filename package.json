@@ -4,8 +4,8 @@
   "description": "<img src=\"assets\\bihjografenlogo.png\" alt=\"BiHjoGrafen\" height=\"200px\">\r <hr>\r <h2>Practices</h2>",
   "main": "index.js",
   "scripts": {
-    "sass:watch": "sass --no-source-map --watch -o static/style/main.scss static/style/main.css",
-    "sass:compile": "sass --no-source-map static/style/main.scss static/style/main.css",
+    "sass:watch": "sass --no-source-map --watch static/style/main.scss:static/src/main.css",
+    "sass:compile": "sass --no-source-map static/style/main.scss:static/src/main.css",
     "start": "nodemon .",
     "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
   },

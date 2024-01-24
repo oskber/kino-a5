@@ -1,9 +1,25 @@
-<article class="movie">
-  <h1>{{ movie.title }}</h1>
-  <div class="intro">
-    {{{ movie.intro }}}
-  </div>
-  {{#if movie.image }}
-  <img src="{{ movie.image.url }}">
-  {{/if }}
-</article>
+<main class="moviesMain">
+  <aside class="sidebar">
+    <div class="sidebar__container">
+      <ul class="sidebar__list">
+        <li class="sidebar__list-item">
+          <input class="sidebar__search-input" type="text" />
+          <i class="fas fa-search sidebar__search-icon"></i>
+        </li>
+      </ul>
+      <i class="fa-solid fa-caret-right sidebar__toggle-menu"></i>
+    </div>
+  </aside>
+  <article class="movie">
+    <div class="movie__container">
+      <h1>{{ movie.title }}</h1>
+      <div class="movie__intro">
+        {{{ movie.intro }}}
+      </div>
+      
+    </div>
+    {{#if movie.image }}
+      <img src="{{ movie.image.url }}">
+      {{/if }}
+  </article>
+</main>
