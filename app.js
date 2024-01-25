@@ -18,8 +18,8 @@ app.get("/aboutus", async (request, response) => {
 app.get("/movies", async (request, response) => {
   response.render("movies");
 });
-app.get("/404", async (request, response) => {
-  response.render("404");
+app.get("/404", async (req, res) => {
+  res.status(404).render("404");
 });
 
 app.get("/newmovies", async (req, res) => {
@@ -29,6 +29,10 @@ app.get("/newmovies", async (req, res) => {
 
 app.get("/newmovies/:movieId", async (req, res) => {
   const movie = await loadMovie(req.params.movieId);
+  if (!movie) {
+    res.status(404).redirect("/404");
+    return;
+  }
   res.render("amovie", { movie });
 });
 

@@ -17,6 +17,9 @@ export async function loadMovies() {
 export async function loadMovie(id) {
   const res = await fetch(API_BASE + "/movies/" + id);
   const payload = await res.json();
+  if (payload.data == null) {
+    return null;
+  }
   return {
     id: payload.data.id,
     ...payload.data.attributes,

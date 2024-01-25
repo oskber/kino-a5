@@ -709,6 +709,7 @@ body {
   margin: 2rem 10rem;
   max-width: 800px;
   display: flex;
+  gap: 5rem;
 }
 .movie__container {
   display: flex;
@@ -730,4 +731,23 @@ body {
   max-width: 400px;
   height: auto;
   border-radius: 5px;
+}
+
+.error {
+  display: block;
+  font-size: 10rem;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  margin-top: 5rem;
+}
+.error__text {
+  display: block;
+  font-size: 5rem;
+  color: white;
+}
+.error__number {
+  display: block;
+  font-size: 10rem;
+  color: white;
 }
