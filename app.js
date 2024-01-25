@@ -9,12 +9,11 @@ app.engine("handlebars", engine());
 app.set("view engine", "handlebars");
 app.set("views", "./templates");
 
-
 app.get("/", async (request, response) => {
-  response.render('index');
+  response.render("index");
 });
 app.get("/aboutus", async (request, response) => {
-  response.render('aboutUs');
+  response.render("aboutUs");
 });
 app.get("/movies", async (request, response) => {
   response.render("movies");
@@ -28,7 +27,7 @@ app.get("/newmovies", async (req, res) => {
   res.render("newmovies", { movies });
 });
 
-app.get("/movies/:movieId", async (req, res) => {
+app.get("/newmovies/:movieId", async (req, res) => {
   const movie = await loadMovie(req.params.movieId);
   res.render("amovie", { movie });
 });
