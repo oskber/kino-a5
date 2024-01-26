@@ -58,3 +58,11 @@ test("The Muppets page shows title of movie", async () => {
 
   expect(response.text).toMatch("The Muppets");
 });
+
+test("Error page shows if movie is null", async () => {
+  const response = await request(app)
+    .get("/newmovies/00")
+    .expect(302);
+
+  expect(response.header.location).toEqual("/404");
+});
